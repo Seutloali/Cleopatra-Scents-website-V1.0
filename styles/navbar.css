@@ -1,0 +1,10 @@
+.com-logo {
+  padding-bottom: 5px;
+}
+
+.nav-item :hover {
+  zoom: 1.02;
+}
+.nav-item :active {
+  zoom: 0.98;
+}

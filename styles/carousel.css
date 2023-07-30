@@ -1,0 +1,81 @@
+.carousel-item {
+  height: 80vh;
+  min-height: 400px;
+  width: 100vw;
+  background: no-repeat scroll center scroll;
+  /*-webkit-backgound: no-repeat scroll center scroll;
+  -webkit-background-size: cover;*/
+  background-size: cover;
+}
+
+
+/*add an overlay to images to make them a bit dark and make text more visible*/
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.6;
+}
+
+.carousel-caption {
+  bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.carousel-caption h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  top: 2rem;
+}
+
+@media (max-width:880px) {
+  .carousel-item {
+    height: 85vh;
+  }
+  .carousel-caption {
+    bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .carousel-caption h1 {
+    font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 16px;
+  }
+  }
+
+/*.d-block {
+  height: 100%;
+}*/
+
+.slider-btn :hover {
+  zoom: 1.02;
+}
+.slider-btn :active {
+  zoom: 0.98;
+}
+
+.carousel-control-prev :hover {
+  zoom: 1.02;
+}
+.carousel-control-prev :active {
+  zoom: 0.98;
+}
+
+.carousel-control-next :hover {
+  zoom: 1.02;
+}
+.carousel-control-next :active {
+  zoom: 0.98;
+}
